@@ -1,4 +1,7 @@
 import React from 'react';
+import Header from './Header';
+import Search from './Search';
+import Thumbnails from './Thumbnails';
 
 
 class App extends React.Component {
@@ -8,7 +11,14 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div></div>
+            <div className="container">
+                <div className="row">
+                    <Header />
+                </div>
+                <div className="row">
+                    <Search />
+                </div>
+            </div>
         );
     }
 }
