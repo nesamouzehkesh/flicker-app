@@ -35,5 +35,5 @@ test('SearchForm calls onSearch with the contents of the input when the form is 
 
         //has onSearch been called with correct argument? In this case 'Test'
         expect(onSearchStub.calledWith('Test')).toBe(true);
-        
+
 });
