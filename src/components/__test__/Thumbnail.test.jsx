@@ -12,7 +12,7 @@ test('Thumbnail renders an img tag with the correct src', () => {
     //you will see the structure of the obj that renderer creates
     console.log(tree);
 
-    //this is for a simple test
+    //this is for a simple tests
     //expect(tree.props.src).toBe('http://test.com/test.jpg');
 
     //snapshot testing:
