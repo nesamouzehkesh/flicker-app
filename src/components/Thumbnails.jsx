@@ -1,4 +1,5 @@
 import React from 'react';
+import Thumbnail from './Thumbnail';
 
 const Thumbnails = ({ photos }) => (
     <div>
@@ -13,7 +14,7 @@ const Thumbnails = ({ photos }) => (
                             marginBottom: '10px',
                         }}
                     >
-                        <img src={ photo.image_url }/>
+                        <Thumbnail src={photo.image_url}/>
                     </div>
                 )
             })

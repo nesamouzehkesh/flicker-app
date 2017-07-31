@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Search from './Search';
-import Thumbnails from './Thumbnails';
 
 
 class App extends React.Component {

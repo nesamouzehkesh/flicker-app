@@ -33,11 +33,7 @@ class Search extends React.Component {
 
         return (
           <div>
-            <div
-                style={{
-                    marginBottom: '20px'
-                }}
-            >
+            <div style={{marginBottom: '20px'}}>
                 <SearchForm onSearch={this.search}/>
             </div>
             <Thumbnails photos={photos}/>
