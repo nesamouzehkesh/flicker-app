@@ -30,15 +30,24 @@ class Search extends React.Component {
 
     render() {
         const { photos } = this.state;
+        const { onShowPhoto } = this.props;
 
         return (
           <div>
-            <div style={{marginBottom: '20px'}}>
+            <div style={{ marginBottom: '20px' }}>
                 <SearchForm onSearch={this.search}/>
             </div>
-            <Thumbnails photos={photos}/>
+            <Thumbnails
+                photos={photos}
+                onClick={onShowPhoto}
+            />
           </div>
         );
     }
 }
+
+Search.propTypes = {
+    onShowPhoto: React.PropTypes.func.isRequired
+};
+
 export default Search;

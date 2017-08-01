@@ -1,7 +1,7 @@
 import React from 'react';
 import Thumbnail from './Thumbnail';
 
-const Thumbnails = ({ photos }) => (
+const Thumbnails = ({ photos, onClick }) => (
     <div>
         {
             photos.map(photo => {
@@ -14,7 +14,11 @@ const Thumbnails = ({ photos }) => (
                             marginBottom: '10px',
                         }}
                     >
-                        <Thumbnail src={photo.image_url}/>
+                        <a onClick={() => onClick(photo)} style={{ cursor: 'pointer' }}>
+                            <Thumbnail
+                                src={photo.image_url}
+                            />
+                        </a>
                     </div>
                 )
             })
@@ -23,7 +27,8 @@ const Thumbnails = ({ photos }) => (
 );
 
 Thumbnails.propTypes = {
-    photos: React.PropTypes.array.isRequired
+    photos: React.PropTypes.array.isRequired,
+    onClick: React.PropTypes.func.isRequired
 };
 
 export default Thumbnails;

@@ -5,6 +5,7 @@
   "dependencies": {
     "object-assign": "^4.1.1",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1",
     "react-confirm": "^0.1.14",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10"
